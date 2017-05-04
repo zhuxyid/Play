@@ -1,7 +1,8 @@
-**系统支持CentOS{6,7},Debian,Ubuntu
-**内存:>=128M
+**System:CentOS,Debian,Ubuntu
 
-**服务器配置
+**Memory:>=128M
+
+**System configure
 
 ```
 server port:default(8989)
@@ -37,7 +38,7 @@ chmod +x shadowsocks.sh
     "timeout":600,
     "method":"aes-256-cfb",
     "fast_open": false
-}       #单端口配置
+}       #single port
 
 {
     "server":"0.0.0.0",
@@ -53,7 +54,7 @@ chmod +x shadowsocks.sh
     "timeout":600,
     "method":"aes-256-cfb",
     "fast_open": false
-}       #多端口配置
+}       #multiple port
 
 
 ```
