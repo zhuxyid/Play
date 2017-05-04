@@ -69,6 +69,9 @@ chmod +x shadowsocks.sh
 **client shadowsock
 
 download url:https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.0.1/Shadowsocks-4.0.1.zip
+
 input server ip
+
 input port
+
 input method
