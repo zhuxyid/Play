@@ -8,3 +8,5 @@
 
 **ssserver
 
+**ngrok
+
