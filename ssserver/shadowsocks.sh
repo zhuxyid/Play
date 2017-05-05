@@ -187,18 +187,18 @@ download_files(){
         exit 1
     fi
     # Download Shadowsocks file
-    if ! wget --no-check-certificate https://github.com/zhuxyid/Play/blob/master/ssserver/shadowsocks-master.zip; then
+    if ! wget --no-check-certificate https://github.com/zhuxyid/Play/raw/master/ssserver/shadowsocks-master.zip; then
         echo "Failed to download shadowsocks python file!"
         exit 1
     fi
     # Download Shadowsocks init script
     if check_sys packageManager yum; then
-        if ! wget --no-check-certificate https://github.com/zhuxyid/Play/blob/master/ssserver/init/shadowsocks -O /etc/init.d/shadowsocks; then
+        if ! wget --no-check-certificate https://raw.githubusercontent.com/zhuxyid/Play/master/ssserver/init/shadowsocks -O /etc/init.d/shadowsocks; then
             echo "Failed to download shadowsocks chkconfig file!"
             exit 1
         fi
     elif check_sys packageManager apt; then
-        if ! wget --no-check-certificate https://github.com/zhuxyid/Play/blob/master/ssserver/init/shadowsocks-debian -O /etc/init.d/shadowsocks; then
+        if ! wget --no-check-certificate https://raw.githubusercontent.com/zhuxyid/Play/master/ssserver/init/shadowsocks-debian -O /etc/init.d/shadowsocks; then
             echo "Failed to download shadowsocks chkconfig file!"
             exit 1
         fi
