@@ -66,7 +66,7 @@ supernode -l 9001 -v        #9001是开放给边缘节点的端口
 ```
 
 
-**小米安装n2n(需要opkg安装,前提需要有opkg命令
+**小米安装n2n(需要opkg安装,前提支持opkg命令)
 
 ```
 #opkg install n2n
