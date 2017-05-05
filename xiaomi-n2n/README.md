@@ -66,3 +66,15 @@ supernode -l 9001 -v        #9001是开放给边缘节点的端口
 ```
 
 
+**小米安装n2n
+
+```
+#opkg install n2n
+#edge -d n2n0 -c zhuxyn2n -k encryptme -a 172.16.10.3 -l VPSIP:9001
+```
+
+**mac安装n2n
+
+```
+
+```
