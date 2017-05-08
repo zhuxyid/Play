@@ -44,6 +44,7 @@ ngrokd(服务端)
 GOOS=windows GOARCH=386   #编译windows 32位,如果是64位的那就GOARCH=amd64
 GOOS=darwin GOARCH=amd64  #编译MAC OS 64位
 GOOS=linux GOARCH=mips    #编译mips平台(小米路由)
+GOOS=linux GOARCH=arm     #编译arm平台(如树莓派)
 如果不确定平台可以用go env查看，前提需要装go环境
 参考文章https://golang.org/doc/install/source
 ```
