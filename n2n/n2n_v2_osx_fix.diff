@@ -1,0 +1,43 @@
+If you see the error message below, you may need this patch:
+  Undefined symbols for architecture x86_64:
+    "_tun_close", referenced from:
+        _tuntap_open in n2n.a(tuntap_osx.o)
+  ld: symbol(s) not found for architecture x86_64
+
+
+# How to use
+If you got the source code from official repository, like me:
+  svn co https://svn.ntop.org/svn/ntop/trunk/n2n
+
+Go to the folder of n2n_v2
+  cd n2n/n2n_v2
+
+Apply this patch
+  patch < /path_to/n2n_v2_osx_fix.diff
+
+And enjoy your make :D
+  make
+
+
+Index: tuntap_osx.c
+===================================================================
+--- tuntap_osx.c	(revision 7394)
++++ tuntap_osx.c	(working copy)
+@@ -19,7 +19,7 @@
+
+ #ifdef _DARWIN_
+
+-void tun_close(tuntap_dev *device);
++//void tun_close(tuntap_dev *device);
+
+ /* ********************************** */
+
+@@ -77,7 +77,7 @@
+
+     fd = popen(buf, "r");
+     if(fd < 0) {
+-      tun_close(device);
++      tuntap_close(device);
+       return(-1);
+     } else {
+       int a, b, c, d, e, f;
