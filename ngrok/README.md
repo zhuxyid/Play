@@ -4,15 +4,14 @@
  假设你有个web项目，想给外面的人访问那该怎么办?
  传统都是利用路由的地址的路由转换实现，假设你没有路由权限，假设你加没有公网ip怎么办？
  这个时候就需要利用ngrok实现。
- 
-
+ 当然你的需要一个vps最好是国外的(香港的也行)不需要备案
 ```
 
 **安装ngrok**
+```
 系统版本:CentOS7.x86_64
 git版本 1.8
 golang版本 1.6
-```
 安装所依赖的包
 #yum -y install zlib-devel openssl-devel perl hg cpio expat-devel gettext-devel curl curl-devel perl-ExtUtils-MakeMaker hg wget gcc gcc-c++
 #yum -y git golang
