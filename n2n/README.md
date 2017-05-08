@@ -72,7 +72,12 @@ supernode -l 9001 -v        #9001是开放给边缘节点的端口
 **mac安装n2n**
 
 ```
-
+$wget https://github.com/zhuxyid/Play/raw/master/n2n/n2n_v2.tar.gz
+$tar zxvf n2n_v2.tar.gz
+$cd n2n_v2
+$wget https://raw.githubusercontent.com/zhuxyid/Play/master/n2n/n2n_v2_osx_fix.diff
+$patch < ~/n2n_v2/n2n_v2_osx_fix.diff
+$make
 ```
 
 **windows安装n2n**
