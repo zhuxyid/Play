@@ -1,10 +1,10 @@
 ## n2n
 
-**用途
+**用途**
 
 目前联通、移动、电信三家运营商家庭宽带都是私有ip,并不能在互联网上直接使用，如果想实现访问家里路由可以跟电信申请固定ip或者买个花生棒www.oray.com
 
-**n2n原理图
+**n2n原理图**
 ```
                ┌─────┐        ┌─────┐                   
                │edge │        │edge │                   
@@ -41,13 +41,13 @@ edge是边缘节点
 #\cp edge /usr/sbin/
 ```
 
-**vps启动supernode
+**vps启动supernode**
 
 ```
 supernode -l 9001 -v        #9001是开放给边缘节点的端口
 ```
 
-**客户端启动边缘节点edge(客户端也需要装n2n,只是不需要启动supernode节点)
+**客户端启动边缘节点edge(客户端也需要装n2n,只是不需要启动supernode节点)**
 
 ```
 #edge -d n2n0 -c zhuxyn2n -k encryptme -a 172.16.10.1 -l VPSIP:9001
@@ -60,7 +60,7 @@ supernode -l 9001 -v        #9001是开放给边缘节点的端口
 ```
 
 
-**小米安装n2n(需要opkg安装,前提支持opkg命令)
+**小米安装n2n(需要opkg安装,前提支持opkg命令)**
 
 ```
 #opkg install n2n
@@ -69,8 +69,13 @@ supernode -l 9001 -v        #9001是开放给边缘节点的端口
 #edge -d n2n0 -c zhuxyn2n -k encryptme -a 172.16.10.3 -l VPSIP:9001
 ```
 
-**mac安装n2n
+**mac安装n2n**
 
+```
+
+```
+
+**windows安装n2n**
 ```
 
 ```
