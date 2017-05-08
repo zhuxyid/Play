@@ -81,6 +81,9 @@ $make
 ```
 
 **windows安装n2n**
-```
 
+```
+下载n2n的GUI程序
+下载地址:https://github.com/zhuxyid/Play/raw/master/n2n/N2N-GUI.exe
+直接安装使用
 ```
