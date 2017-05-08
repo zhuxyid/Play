@@ -7,7 +7,7 @@
 
 ```
 
-安装ngrok
+**安装ngrok**
 ```bash
 #wget https://github.com/zhuxyid/Play/raw/master/ngrok/ngrok.tar.gz -P /usr/local/
 #cd /usr/local/
@@ -26,7 +26,9 @@
 ```
 
 **可以看到在ngrok/bin下生成ngrok,ngroked执行文件**
+
 ngrok(客户端)   ngrokd(服务端)
+
 
 **注:这里编译适用于linux.x86-64位的平台，如果使用其他平台可参考如下**
 ```
