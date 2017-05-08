@@ -28,8 +28,7 @@ golang版本 1.6
 #cp rootCA.pem assets/client/tls/ngrokroot.crt
 #cp server.crt assets/server/tls/snakeoil.crt
 #cp server.key assets/server/tls/snakeoil.key            #上面的都是生成域名证书，通常是微信接口使用
-#GOOS=linux GOARCH=amd64
-#make release-server release-client 
+#GOOS=linux GOARCH=amd64 make release-server release-client 
 ```
 
 **可以看到在ngrok/bin下生成ngrok,ngroked执行文件**
@@ -41,10 +40,10 @@ ngrokd(服务端)
 
 **注:这里编译适用于linux.x86-64位的平台，如果使用其他平台可参考如下**
 ```
-GOOS=windows GOARCH=386   #编译windows 32位,如果是64位的那就GOARCH=amd64
-GOOS=darwin GOARCH=amd64  #编译MAC OS 64位
-GOOS=linux GOARCH=mips    #编译mips平台(小米路由)
-GOOS=linux GOARCH=arm     #编译arm平台(如树莓派)
+GOOS=windows GOARCH=386 make release-client  #编译windows 32位,如果是64位的那就GOARCH=amd64
+GOOS=darwin GOARCH=amd64 make release-client #编译MAC OS 64位
+GOOS=linux GOARCH=mips make release-client   #编译mips平台(小米路由)
+GOOS=linux GOARCH=arm make release-client    #编译arm平台(如树莓派)
 如果不确定平台可以用go env查看，前提需要装go环境
 参考文章https://golang.org/doc/install/source
 ```
