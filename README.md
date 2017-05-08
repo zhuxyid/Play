@@ -1,12 +1,2 @@
-# play project
-
-**小米-ss**
-
-**小米-opkg**
-
-**n2n**
-
-**ssserver**
-
-**ngrok**
+只是分享一些好玩的东西而已
 
