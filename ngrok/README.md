@@ -59,6 +59,7 @@ ngrok默认启动的端口4443
 ```
 
 **测试是否正常**
+
 访问:http://zhuxyid.com:9999  #前提需要将域名@记录执行vps的ip
 如果出现Tunnel zhuxyid.com:9999 not found那就说明正常
 
