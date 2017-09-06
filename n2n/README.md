@@ -36,7 +36,7 @@ edge是边缘节点
 **vps中部署n2n的supernode节点(部署步骤很简单)**
 ```
 #wget https://github.com/zhuxyid/Play/raw/master/n2n/n2n_v2.tar.gz -P /opt
-#cd opt && tar zxvf n2n_v2.tar.gz &&cd n2n_v2 && make &&make install
+#cd /opt && tar zxvf n2n_v2.tar.gz &&cd n2n_v2 && make &&make install
 #\cp supernode /usr/sbin/
 #\cp edge /usr/sbin/
 ```
