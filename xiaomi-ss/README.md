@@ -6,7 +6,7 @@
 
 ```bash
 cd /tmp && rm -rf *.sh
-wget https://github.com/zhuxyid/play/blob/master/xiaomi-ss/miwifi.sh
+wget https://raw.githubusercontent.com/zhuxyid/Play/master/xiaomi-ss/miwifi.sh
 chmod +x miwifi.sh
 sh ./miwifi.sh
 rm -rf *.s
