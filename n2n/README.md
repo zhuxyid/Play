@@ -88,3 +88,9 @@ $make
 下载地址:https://github.com/zhuxyid/Play/raw/master/n2n/N2N-GUI.exe
 直接安装使用
 ```
+
+
+**QA**
+CentOS7上可能启动n2n客户端发现网卡down状态
+需要安装net-tools工具
+
